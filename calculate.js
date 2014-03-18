@@ -16,12 +16,14 @@ var colors = {
 
 function getResistanceStr(bands, multiplier) {
 	var resistance = 
-			(bands[0] * 10 +
-			bands[1]) *
-			Math.pow(10, bands[2])
+		(
+			bands[0] * 10 +
+			bands[1]
+		) *
+		Math.pow(10, bands[2])
 	;
 	
-	return resistance + " " + tolerance(bands[3]);
+	return resistance + "Ω " + tolerance(bands[3]) + "%";
 }
 
 function tolerance(color) {
