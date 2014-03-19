@@ -2,3 +2,29 @@
 	font-family: noodle;
 	src: url('http://www.redskullgaming.net/assets/font/BigNoodle.ttf');
 }
+@font-face {
+	font-family: purista;
+	src: url('http://www.redskullgaming.net/assets/font/PuristaSemibold.otf');
+}
+html,
+body {
+  height: 100%;
+  padding-top: 30px;
+  background-color: black;
+}
+#wrap {
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -60px;
+  /* Pad bottom by footer height */
+  padding: 0 0 60px;
+}
+#footer {
+  height: 60px;
+  background-color: #000000;
+  font-family: noodle;
+}
+#text {
+  font-family: purista;
+}
