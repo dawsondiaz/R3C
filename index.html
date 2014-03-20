@@ -9,14 +9,15 @@
 		<script type="text/javascript" src="calculate.js"></script>
 		<!--Include jQuery-->
 		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-		<!--Latest version of minified Bootstrap CSS-->
-		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+		<!-- Bootstrap CSS-->
+		<link rel="stylesheet" href="style.css">
 		<!--Latest compiled and minified Bootsrap JavaScript-->
 		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 	</head>
-	<body>
+	<body bgcolor="#000000">
+	<div id="wrap">
 		<!--Navigation-->
-		<div class="navbar navbar-default navbar-static-top navbar-inverse" role="navigation">
+		<div class="navbar navbar-default navbar-static-top" role="navigation">
 			<div class="container">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -36,9 +37,9 @@
 				</div>
 			</div>
 		</div>
-		
 		<!--Content-->	
 		<div>
+			<center>
 			<form id="sarah">
 				<input type="submit"></input>
 			</form>
@@ -87,13 +88,16 @@
 				<option value="BLUE">Blue</option>
 				<option value="VIOLET">Violet</option>
 			</select>
+			</center>
 		</div>
-		
+	</div>
 		<!--Footer-->
 		<div id="footer">
-			<center>	
-				<p>&copy 2014 - R3C</p>
-			</center>
+			<div class="container">
+				<font size=5>
+					<p class="text-muted text-center">&copy R3C - 2014</p>
+				</font>
+			</div>
 		</div>
 	</body>
 </html>
