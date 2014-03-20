@@ -7,6 +7,9 @@
 		<meta name="keywords" content="Resistor, Calculator, Color Code, Electronics">
 		<link href="favicon.ico" rel="icon" type="image/x-icon" />
 		<script type="text/javascript" src="calculate.js"></script>
+		<!--Input processing-->
+		<script type="text/javascript">
+		</script>
 		<!--Include jQuery-->
 		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 		<!-- Bootstrap CSS-->
@@ -39,7 +42,7 @@
 		</div>
 		<!--Content-->	
 		<div style="margin:auto; text-align:center">
-			<form name="sarah">
+			<form name="sarah" onsubmit="alert(getResistanceStr(new Array(document.forms['sarah'])));">
 				<input type="submit"></input>
 			</form>
 			<select name="band1" form="sarah">
