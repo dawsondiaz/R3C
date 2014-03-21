@@ -45,8 +45,6 @@ $('select').change(function() {
 
 function formSubmit() {
 	alert(
-		getResistanceStr(
-			document.forms['sarah']
-		)
+		"Resistance: " + getResistanceStr(document.forms['sarah'])
 	);
 }
