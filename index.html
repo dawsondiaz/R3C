@@ -5,6 +5,7 @@
 		<meta name="author" content="Dawson Diaz, Evan Shimoniak">
 		<meta name="description" content="Resistor Color Code Calculator">
 		<meta name="keywords" content="Resistor, Calculator, Color Code, Electronics">
+		<!--Set favicon-->
 		<link href="favicon.ico" rel="icon" type="image/x-icon" />
 		<!--Include jQuery-->
 		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -17,81 +18,81 @@
 		<!--Calculator-->
 		<script type="text/javascript" src="calculate.js"></script>
 	</head>
-	<body bgcolor="#000000">
-	<div id="wrap">
-		<!--Navigation-->
-		<div class="navbar navbar-default navbar-static-top" role="navigation">
-			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="#">R3C - Beta</a>
-				</div>
-				<div class="navbar-collapse collapse pull-right">
-					<ul class="nav navbar-nav">
-						<li class="active"><a href="#">Home</a></li>
-						<li><a href="#about">About</a></li>
-						<li><a href="#contact">Information</a></li>
-					</ul>
+	<body>
+		<div id="wrap">
+			<!--Navigation-->
+			<div class="navbar navbar-default navbar-static-top" role="navigation">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#">R3C - Beta</a>
+					</div>
+					<div class="navbar-collapse collapse pull-right">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="#">Home</a></li>
+							<li><a href="#about">About</a></li>
+							<li><a href="#contact">Information</a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
+			<!--Content-->	
+			<div style="margin:auto; text-align:center">
+				<form name="sarah" onsubmit="alert(getResistanceStr(new Array(document.forms['sarah'])));">
+					<input type="submit"></input>
+				</form>
+				<select name="band1" form="sarah">
+					<option style="background-color: black;  color: white;" value="BLACK" >Black</option>
+					<option style="background-color: brown;  color: white;" value="BROWN" >Brown</option>
+					<option style="background-color: red;    color: black;" value="RED"   >Red</option>
+					<option style="background-color: orange; color: black;" value="ORANGE">Orange</option>
+					<option style="background-color: yellow; color: black;" value="YELLOW">Yellow</option>
+					<option style="background-color: green;  color: white;" value="GREEN" >Green</option>
+					<option style="background-color: blue;   color: white;" value="BLUE"  >Blue</option>
+					<option style="background-color: purple; color: white;" value="VIOLET">Violet</option>
+					<option style="background-color: gray;   color: white;" value="GRAY"  >Gray</option>
+					<option style="background-color: white;  color: black;" value="WHITE" >White</option>
+				</select>
+				<select name="band2" form="sarah">
+					<option style="background-color: black;  color: white;" value="BLACK" >Black</option>
+					<option style="background-color: brown;  color: white;" value="BROWN" >Brown</option>
+					<option style="background-color: red;    color: black;" value="RED"   >Red</option>
+					<option style="background-color: orange; color: black;" value="ORANGE">Orange</option>
+					<option style="background-color: yellow; color: black;" value="YELLOW">Yellow</option>
+					<option style="background-color: green;  color: white;" value="GREEN" >Green</option>
+					<option style="background-color: blue;   color: white;" value="BLUE"  >Blue</option>
+					<option style="background-color: purple; color: white;" value="VIOLET">Violet</option>
+					<option style="background-color: gray;   color: white;" value="GRAY"  >Gray</option>
+					<option style="background-color: white;  color: black;" value="WHITE" >White</option>
+				</select>
+				<select name="band3" form="sarah">
+					<option style="background-color: gray;   color: white;" value="SILVER">Silver</option>
+					<option style="background-color: yellow; color: black;" value="GOLD"  >Gold</option>
+					<option style="background-color: black;  color: white;" value="BLACK" >Black</option>
+					<option style="background-color: brown;  color: white;" value="BROWN" >Brown</option>
+					<option style="background-color: red;    color: black;" value="RED"   >Red</option>
+					<option style="background-color: orange; color: black;" value="ORANGE">Orange</option>
+					<option style="background-color: yellow; color: black;" value="YELLOW">Yellow</option>
+					<option style="background-color: green;  color: white;" value="GREEN" >Green</option>
+					<option style="background-color: blue;   color: white;" value="BLUE"  >Blue</option>
+					<option style="background-color: purple; color: white;" value="VIOLET">Violet</option>
+				</select>
+				<select name="band4" form="sarah">
+					<option style="background-color: gray;   color: white;" value="SILVER">Silver</option>
+					<option style="background-color: yellow; color: black;" value="GOLD"  >Gold</option>
+					<option style="background-color: brown;  color: white;" value="BROWN" >Brown</option>
+					<option style="background-color: red;    color: black;" value="RED"   >Red</option>
+					<option style="background-color: green;  color: white;" value="GREEN" >Green</option>
+					<option style="background-color: blue;   color: white;" value="BLUE"  >Blue</option>
+					<option style="background-color: purple; color: white;" value="VIOLET">Violet</option>
+				</select>
+			</div>
 		</div>
-		<!--Content-->	
-		<div style="margin:auto; text-align:center">
-			<form name="sarah" onsubmit="alert(getResistanceStr(new Array(document.forms['sarah'])));">
-				<input type="submit"></input>
-			</form>
-			<select name="band1" form="sarah">
-				<option style="background-color: black;  color: white;" value="BLACK" >Black</option>
-				<option style="background-color: brown;  color: white;" value="BROWN" >Brown</option>
-				<option style="background-color: red;    color: black;" value="RED"   >Red</option>
-				<option style="background-color: orange; color: black;" value="ORANGE">Orange</option>
-				<option style="background-color: yellow; color: black;" value="YELLOW">Yellow</option>
-				<option style="background-color: green;  color: white;" value="GREEN" >Green</option>
-				<option style="background-color: blue;   color: white;" value="BLUE"  >Blue</option>
-				<option style="background-color: purple; color: white;" value="VIOLET">Violet</option>
-				<option style="background-color: gray;   color: white;" value="GRAY"  >Gray</option>
-				<option style="background-color: white;  color: black;" value="WHITE" >White</option>
-			</select>
-			<select name="band2" form="sarah">
-				<option style="background-color: black;  color: white;" value="BLACK" >Black</option>
-				<option style="background-color: brown;  color: white;" value="BROWN" >Brown</option>
-				<option style="background-color: red;    color: black;" value="RED"   >Red</option>
-				<option style="background-color: orange; color: black;" value="ORANGE">Orange</option>
-				<option style="background-color: yellow; color: black;" value="YELLOW">Yellow</option>
-				<option style="background-color: green;  color: white;" value="GREEN" >Green</option>
-				<option style="background-color: blue;   color: white;" value="BLUE"  >Blue</option>
-				<option style="background-color: purple; color: white;" value="VIOLET">Violet</option>
-				<option style="background-color: gray;   color: white;" value="GRAY"  >Gray</option>
-				<option style="background-color: white;  color: black;" value="WHITE" >White</option>
-			</select>
-			<select name="band3" form="sarah">
-				<option style="background-color: gray;   color: white;" value="SILVER">Silver</option>
-				<option style="background-color: yellow; color: black;" value="GOLD"  >Gold</option>
-				<option style="background-color: black;  color: white;" value="BLACK" >Black</option>
-				<option style="background-color: brown;  color: white;" value="BROWN" >Brown</option>
-				<option style="background-color: red;    color: black;" value="RED"   >Red</option>
-				<option style="background-color: orange; color: black;" value="ORANGE">Orange</option>
-				<option style="background-color: yellow; color: black;" value="YELLOW">Yellow</option>
-				<option style="background-color: green;  color: white;" value="GREEN" >Green</option>
-				<option style="background-color: blue;   color: white;" value="BLUE"  >Blue</option>
-				<option style="background-color: purple; color: white;" value="VIOLET">Violet</option>
-			</select>
-			<select name="band4" form="sarah">
-				<option style="background-color: gray;   color: white;" value="SILVER">Silver</option>
-				<option style="background-color: yellow; color: black;" value="GOLD"  >Gold</option>
-				<option style="background-color: brown;  color: white;" value="BROWN" >Brown</option>
-				<option style="background-color: red;    color: black;" value="RED"   >Red</option>
-				<option style="background-color: green;  color: white;" value="GREEN" >Green</option>
-				<option style="background-color: blue;   color: white;" value="BLUE"  >Blue</option>
-				<option style="background-color: purple; color: white;" value="VIOLET">Violet</option>
-			</select>
-		</div>
-	</div>
 		<!--Footer-->
 		<div id="footer">
 			<div class="container">
