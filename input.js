@@ -42,3 +42,11 @@ $('select').change(function() {
 			break;
 	}
 });
+
+function formSubmit() {
+	alert(
+		getResistanceStr(
+			document.forms['sarah']
+		)
+	);
+}
