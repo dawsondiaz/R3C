@@ -22,7 +22,7 @@ function getResistanceStr(bands) {
 		Math.pow(10, colors[bands[2]])
 	;
 	
-	return resistance + "Ω " + tolerance(colors[bands[3]]) + "%";
+	return resistance + " ohms " + tolerance(colors[bands[3]]) + "%";
 }
 
 function tolerance(color) {
