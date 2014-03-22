@@ -6,10 +6,10 @@ function selectChange() {
 	alert(
 		"Resistance: " + getResistanceStr(
 			new Array(
-				document.getElementById('band1'),
-				document.getElementById('band2'),
-				document.getElementById('band3'),
-				document.getElementById('band4')
+				document.getElementById('band1').value,
+				document.getElementById('band2').value,
+				document.getElementById('band3').value,
+				document.getElementById('band4').value
 			)
 		)
 	);
