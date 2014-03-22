@@ -3,8 +3,7 @@ $(document).ready(function() {
 });
 
 function selectChange() {
-	alert(
-		"Resistance: " + getResistanceStr(
+	alert("Resistance: " + getResistanceStr(
 			new Array(
 				document.getElementById('band1').value,
 				document.getElementById('band2').value,
