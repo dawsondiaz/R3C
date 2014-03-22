@@ -2,9 +2,9 @@
 <html lang="en">
 	<head>
 		<title>R3C - Beta</title>
-		<meta name="author" content="Dawson Diaz, Evan Shimoniak">
-		<meta name="description" content="Resistor Color Code Calculator">
-		<meta name="keywords" content="Resistor, Calculator, Color Code, Electronics">
+		<meta id="author" content="Dawson Diaz, Evan Shimoniak">
+		<meta id="description" content="Resistor Color Code Calculator">
+		<meta id="keywords" content="Resistor, Calculator, Color Code, Electronics">
 		<!--Set favicon-->
 		<link href="favicon.ico" rel="icon" type="image/x-icon" />
 		<!--Include jQuery-->
@@ -15,10 +15,10 @@
 		<link rel="stylesheet" href="style.css">
 		<!--Latest compiled and minified Bootsrap JavaScript-->
 		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-		<!--Input processing-->
-		<script type="text/javascript" src="input.js"></script>
 		<!--Calculator-->
 		<script type="text/javascript" src="calculate.js"></script>
+		<!--Input processing-->
+		<script type="text/javascript" src="input.js"></script>
 	</head>
 	<body>
 		<div id="wrap">
@@ -45,10 +45,7 @@
 			</div>
 			<!--Content-->	
 			<div style="margin:auto; text-align:center">
-				<form name="sarah" onsubmit="formSubmit()">
-					<input type="submit"></input>
-				</form>
-				<select name="band1" form="sarah">
+				<select id="band1" onchange="selectChange()">
 					<option style="background-color: black;  color: white;" value="BLACK" >Black</option>
 					<option style="background-color: brown;  color: white;" value="BROWN" >Brown</option>
 					<option style="background-color: red;    color: black;" value="RED"   >Red</option>
@@ -60,7 +57,7 @@
 					<option style="background-color: gray;   color: white;" value="GRAY"  >Gray</option>
 					<option style="background-color: white;  color: black;" value="WHITE" >White</option>
 				</select>
-				<select name="band2" form="sarah">
+				<select id="band2" onchange="selectChange()">
 					<option style="background-color: black;  color: white;" value="BLACK" >Black</option>
 					<option style="background-color: brown;  color: white;" value="BROWN" >Brown</option>
 					<option style="background-color: red;    color: black;" value="RED"   >Red</option>
@@ -72,7 +69,7 @@
 					<option style="background-color: gray;   color: white;" value="GRAY"  >Gray</option>
 					<option style="background-color: white;  color: black;" value="WHITE" >White</option>
 				</select>
-				<select name="band3" form="sarah">
+				<select id="band3" onchange="selectChange()">
 					<option style="background-color: silver;   color: white;" value="SILVER">Silver</option>
 					<option style="background-color: gold; color: black;" value="GOLD"  >Gold</option>
 					<option style="background-color: black;  color: white;" value="BLACK" >Black</option>
@@ -84,7 +81,7 @@
 					<option style="background-color: blue;   color: white;" value="BLUE"  >Blue</option>
 					<option style="background-color: purple; color: white;" value="VIOLET">Violet</option>
 				</select>
-				<select name="band4" form="sarah">
+				<select id="band4" onchange="selectChange()">
 					<option style="background-color: silver;   color: white;" value="SILVER">Silver</option>
 					<option style="background-color: gold; color: black;" value="GOLD"  >Gold</option>
 					<option style="background-color: brown;  color: white;" value="BROWN" >Brown</option>
