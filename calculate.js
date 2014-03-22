@@ -22,18 +22,18 @@ function getResistanceStr(bands) {
 		Math.pow(10, colors[bands[2]])
 	;
 	
-	return resistance + "Ω " + tolerance(colors[bands[3]]) + "%";
+	return resistance + " ohms " + tolerance(colors[bands[3]]) + "%";
 }
 
 function tolerance(color) {
 	switch (color) {
-		case color.SILVER:	return 10;
-		case color.GOLD:	return 5;
-		case color.BROWN:	return 1;
-		case color.RED:		return 2;
-		case color.GREEN:	return 0.5;
-		case color.BLUE:	return 0.25;
-		case color.VIOLET:	return 0.1;
+		case colors["SILVER"]:	return 10;
+		case colors["GOLD"]:	return 5;
+		case colors["BROWN"]:	return 1;
+		case colors["RED"]:		return 2;
+		case colors["GREEN"]:	return 0.5;
+		case colors["BLUE"]:	return 0.25;
+		case colors["VIOLET"]:	return 0.1;
 		default: 			return 0;
 	}
 }
