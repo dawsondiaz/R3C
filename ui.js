@@ -40,7 +40,7 @@ $(document).ready(function() {
 		}
 
 
-		$('#result').setText("Resistance: " + getResistanceStr(
+		$('#result').text("Resistance: " + getResistanceStr(
 			new Array(
 				document.getElementById('band1').value,
 				document.getElementById('band2').value,
