@@ -38,7 +38,7 @@ $(document).ready(function() {
 							$(this).css('color', 'black');
 				break;
 			case "NONE":    $(this).css('background-color','transparent');
-							$(this).css('color', 'transparent');
+							$(this).css('color', 'black');
 				break;
 		}
 
