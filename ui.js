@@ -37,7 +37,7 @@ $(document).ready(function() {
 			case "WHITE":	$(this).css('background-color', 'white');
 							$(this).css('color', 'black');
 				break;
-			case "NONE":    $(this).css('background-color','transparent');
+			case "NONE":    $(this).css('background-color','initial');
 							$(this).css('color', 'black');
 				break;
 		}
