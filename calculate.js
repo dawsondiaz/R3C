@@ -12,6 +12,7 @@ colors["BLUE"]		= 6;
 colors["VIOLET"]	= 7;
 colors["GRAY"]		= 8;
 colors["WHITE"]		= 9;
+colors["NONE"]		= 0;
 
 function getResistanceStr(bands) {
 	var resistance = 
