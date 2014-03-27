@@ -17,8 +17,18 @@
 	font-family: noodle;
 	src: url('http://www.redskullgaming.net/assets/font/BigNoodle.ttf');
 }
+/*
+MODIFIED
+*/
+html {
+	font-family: sans-serif;
+		-webkit-text-size-adjust: 100%;
+		-ms-text-size-adjust: 100%;
+	height: 100%;
+}
 body {
 	margin: 0;
 	height: 100%;
-	background-color: #F2F2F2 !importantt
+	background-color: #F2F2F2 !important;
+	user-select: none !important;
 }
