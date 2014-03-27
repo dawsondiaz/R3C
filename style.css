@@ -1,25 +1,3 @@
-#wrap {
-	min-height: 100%;
-	height: auto;
-	margin: 0 auto -35px;
-	padding: 0 0 35px;
-	overflow-x: hidden;
-	overflow-y: hidden;
-	user-select: none;
-}
-#footer {
-	height: 35px;
-	font-family: noodle;
-	overflow-x: hidden;
-	overflow-y: hidden;
-}
-@font-face {
-	font-family: noodle;
-	src: url('http://www.redskullgaming.net/assets/font/BigNoodle.ttf');
-}
-/*
-MODIFIED
-*/
 html {
 	font-family: sans-serif;
 		-webkit-text-size-adjust: 100%;
@@ -30,5 +8,22 @@ body {
 	margin: 0;
 	height: 100%;
 	background-color: #F2F2F2 !important;
-	user-select: none !important;
+}
+#wrap {
+	min-height: 100%;
+	height: auto;
+	margin: 0 auto -35px;
+	padding: 0 0 35px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+#footer {
+	height: 35px;
+	font-family: noodle;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+@font-face {
+	font-family: noodle;
+	src: url('http://www.redskullgaming.net/assets/font/BigNoodle.ttf');
 }
