@@ -93,7 +93,7 @@ $(document).ready(function() {
 						document.getElementById('5band3').value,
 						document.getElementById('band3').value,
 						document.getElementById('band4').value,
-						document.getElementById('band6').value;
+						document.getElementById('band6').value
 					), 6
 				));
 				break;
