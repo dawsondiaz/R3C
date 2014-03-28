@@ -42,14 +42,63 @@ $(document).ready(function() {
 				break;
 		}
 
-
-		$('#result').text("Resistance: " + getResistanceStr(
-			new Array(
-				document.getElementById('band1').value,
-				document.getElementById('band2').value,
-				document.getElementById('band3').value,
-				document.getElementById('band4').value
-			)
-		));
+		switch (document.getElementById('numBands')) {
+			case "4":
+				if ($('#5band3').css("display") != "none") {
+					$('#5band3').slideUp();
+				}
+				if ($('#band6').css("display") != "none") {
+					$('#band6').slideUp();
+				}
+				
+				$('#result').text("Resistance: " + getResistanceStr(
+					new Array(
+						document.getElementById('band1').value,
+						document.getElementById('band2').value,
+						document.getElementById('band3').value,
+						document.getElementById('band4').value
+					), 4
+				));
+				break;
+			case "5":
+				if ($('#5band3').css("display") == "none") {
+					$('#5band3').slideDown();
+				}
+				if ($('#band6').css("display") != "none") {
+					$('#band6').slideUp();
+				}
+				
+				$('#result').text("Resistance: " + getResistanceStr(
+					new Array(
+						document.getElementById('band1').value,
+						document.getElementById('band2').value,
+						document.getElementById('5band3').value,
+						document.getElementById('band3').value,
+						document.getElementById('band4').value
+					), 5
+				));
+				break;
+			case "6":
+				if ($('#5band3').css("display") == "none") {
+					$('#5band3').slideDown();
+				}
+				if ($('#band6').css("display") == "none") {
+					$('#band6').slideDown();
+				}
+				
+				$('#result').text("Resistance: " + getResistanceStr(
+					new Array(
+						document.getElementById('band1').value,
+						document.getElementById('band2').value,
+						document.getElementById('5band3').value,
+						document.getElementById('band3').value,
+						document.getElementById('band4').value,
+						document.getElementById('band6').value;
+					), 6
+				));
+				break;
+			default: alert("WTF");
+				break;
+		}
 	});
 });
