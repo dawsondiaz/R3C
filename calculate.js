@@ -16,7 +16,8 @@ colors["NONE"]		= 0;
 
 function getResistanceStr(bands, numBands) {
 	switch (numBands) {
-		case 4:
+		//case 4
+		default:
 			var resistance = 
 				(
 					colors[bands[0]] * 10 +
