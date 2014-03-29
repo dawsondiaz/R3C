@@ -42,7 +42,7 @@ $(document).ready(function() {
 				break;
 		}
 
-		switch (document.getElementById('numBands')) {
+		switch (document.getElementById('numBands').value) {
 			case "4":
 				if ($('#5band3').css("display") != "none") {
 					$('#5band3').slideUp();
