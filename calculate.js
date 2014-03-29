@@ -49,6 +49,7 @@ function getResistanceStr(bands, numBands) {
 			;
 			
 			return resistance + " ohms " + tolerance(colors[bands[4]]) + "% " + temp(colors[bands[5]] + "ppm");
+	}
 }
 
 function tolerance(color) {
