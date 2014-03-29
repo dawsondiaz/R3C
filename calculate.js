@@ -1,4 +1,4 @@
-var colors = {};
+var colors = new Array();
 colors["SILVER"]	= -2;
 colors["GOLD"]		= -1;
 //Silver and Gold (above) are only for multipliers
