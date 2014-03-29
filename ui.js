@@ -44,8 +44,8 @@ $(document).ready(function() {
 
 		switch (document.getElementById('numBands').value) {
 			case "4":
-				if ($('#5band3').css("display") != "none") {
-					$('#5band3').slideUp();
+				if ($('#fiveband3').css("display") != "none") {
+					$('#fiveband3').slideUp();
 				}
 				if ($('#band6').css("display") != "none") {
 					$('#band6').slideUp();
@@ -61,8 +61,8 @@ $(document).ready(function() {
 				));
 				break;
 			case "5":
-				if ($('#5band3').css("display") == "none") {
-					$('#5band3').slideDown();
+				if ($('#fiveband3').css("display") == "none") {
+					$('#fiveband3').slideDown();
 				}
 				if ($('#band6').css("display") != "none") {
 					$('#band6').slideUp();
@@ -79,8 +79,8 @@ $(document).ready(function() {
 				));
 				break;
 			case "6":
-				if ($('#5band3').css("display") == "none") {
-					$('#5band3').slideDown();
+				if ($('#fiveband3').css("display") == "none") {
+					$('#fiveband3').slideDown();
 				}
 				if ($('#band6').css("display") == "none") {
 					$('#band6').slideDown();
