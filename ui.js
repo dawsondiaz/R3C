@@ -72,7 +72,7 @@ $(document).ready(function() {
 					new Array(
 						document.getElementById('band1').value,
 						document.getElementById('band2').value,
-						document.getElementById('5band3').value,
+						document.getElementById('fiveband3').value,
 						document.getElementById('band3').value,
 						document.getElementById('band4').value
 					), 5
@@ -90,7 +90,7 @@ $(document).ready(function() {
 					new Array(
 						document.getElementById('band1').value,
 						document.getElementById('band2').value,
-						document.getElementById('5band3').value,
+						document.getElementById('fiveband3').value,
 						document.getElementById('band3').value,
 						document.getElementById('band4').value,
 						document.getElementById('band6').value
