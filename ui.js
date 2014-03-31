@@ -13,7 +13,7 @@ $(document).ready(function() {
 			case "BROWN":	$(this).css('background-color', 'brown');
 							$(this).css('color', 'white');
 				break;
-			case "RED":		$(this).css('background-color', 'red');
+			case "RED": 	$(this).css('background-color', 'red');
 							$(this).css('color', 'black');
 				break;
 			case "ORANGE":	$(this).css('background-color', 'orange');
@@ -45,10 +45,10 @@ $(document).ready(function() {
 		switch (document.getElementById('numBands').value) {
 			case "4":
 				if ($('#fiveband3').css("display") != "none") {
-					$('#fiveband3').show('hide');
+					$('#fiveband3').hide('slow');
 				}
 				if ($('#band6').css("display") != "none") {
-					$('#band6').show('hide');
+					$('#band6').hide('slow');
 				}
 				
 				$('#result').text("Resistance: " + getResistanceStr(
@@ -65,7 +65,7 @@ $(document).ready(function() {
 					$('#fiveband3').show('slow');
 				}
 				if ($('#band6').css("display") != "none") {
-					$('#band6').show('hide');
+					$('#band6').hide('slow');
 				}
 				
 				$('#result').text("Resistance: " + getResistanceStr(
