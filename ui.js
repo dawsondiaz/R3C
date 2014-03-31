@@ -65,7 +65,7 @@ $(document).ready(function() {
 					$('#fiveband3').show('slow');
 				}
 				if ($('#band6').css("display") != "none") {
-					$('#band6')..show('hide');
+					$('#band6').show('hide');
 				}
 				
 				$('#result').text("Resistance: " + getResistanceStr(
