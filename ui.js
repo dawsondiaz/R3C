@@ -45,10 +45,10 @@ $(document).ready(function() {
 		switch (document.getElementById('numBands').value) {
 			case "4":
 				if ($('#fiveband3').css("display") != "none") {
-					$('#fiveband3').next().animate({width: 'hide'});
+					$('#fiveband3').show('hide');
 				}
 				if ($('#band6').css("display") != "none") {
-					$('#band6').next().animate({width: 'hide'});
+					$('#band6').show('hide');
 				}
 				
 				$('#result').text("Resistance: " + getResistanceStr(
@@ -62,10 +62,10 @@ $(document).ready(function() {
 				break;
 			case "5":
 				if ($('#fiveband3').css("display") == "none") {
-					$('#fiveband3').next().animate({width: 'show'});
+					$('#fiveband3').show('slow');
 				}
 				if ($('#band6').css("display") != "none") {
-					$('#band6').next().animate({width: 'hide'});
+					$('#band6')..show('hide');
 				}
 				
 				$('#result').text("Resistance: " + getResistanceStr(
@@ -80,10 +80,10 @@ $(document).ready(function() {
 				break;
 			case "6":
 				if ($('#fiveband3').css("display") == "none") {
-					$('#fiveband3').next().animate({width: 'show'});
+					$('#fiveband3').show('slow');
 				}
 				if ($('#band6').css("display") == "none") {
-					$('#band6').next().animate({width: 'show'});
+					$('#band6').show('slow');
 				}
 				
 				$('#result').text("Resistance: " + getResistanceStr(
