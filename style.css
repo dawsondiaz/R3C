@@ -25,16 +25,34 @@ body {
 }
 @font-face {
 	font-family: noodle;
-	src: url('http://www.redskullgaming.net/assets/font/BigNoodle.ttf');
+	src: url('https://s3-us-west-1.amazonaws.com/dawsondiaz/fonts/BigNoodle.TTF');
 }
-.style select {
+.colorselect{
    background: transparent;
-   width: 80px;
-   font-size: 14px;
+   padding-left: 2px;
+   width: 110px;
+   font-size: 24px;
+   line-height: 1;
+   height: 40px;
+   -webkit-appearance: none;
+   border-radius: 25px;
+   background-image: url('img/arrow.png');
+   background-repeat: no-repeat;
+   background-position: 90px; 
+   }
+.bandselect{
+   background: transparent;
+   padding-left: 2px;
+   width: 70px;
+   font-size: 20px;
    line-height: 1;
    border: 0;
    border-radius: 0;
-   height: 20px;
-   -webkit-appearance: none;
-   border: solid 1px;
+   height: 40px;
+   background-image: url('img/arrow.png');
+   background-repeat: no-repeat;
+   background-position: 55px; 
    }
+.result {
+	font-size: 24px;
+}
