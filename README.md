@@ -9,3 +9,4 @@ Planned Additions
 
 Known Issues
 ------------
+* None option doesn't return transparent background on user select
