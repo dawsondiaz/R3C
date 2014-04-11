@@ -27,3 +27,14 @@ body {
 	font-family: noodle;
 	src: url('http://www.redskullgaming.net/assets/font/BigNoodle.ttf');
 }
+.style select {
+   background: transparent;
+   width: 80px;
+   font-size: 14px;
+   line-height: 1;
+   border: 0;
+   border-radius: 0;
+   height: 20px;
+   -webkit-appearance: none;
+   border: solid 1px;
+   }
