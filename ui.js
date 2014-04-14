@@ -45,10 +45,12 @@ $(document).ready(function() {
 		switch (document.getElementById('numBands').value) {
 			case "4":
 				if ($('#fiveband3').css("display") != "none") {
-					$('#fiveband3').hide('slow');
+					$('#band6').css("display", "none");
+//					$('#fiveband3').hide('slow');
 				}
 				if ($('#band6').css("display") != "none") {
-					$('#band6').hide('slow');
+					$('#band6').css("display", "none");
+//					$('#band6').hide('slow');
 				}
 				
 				$('#result').text("Resistance: " + getResistanceStr(
@@ -62,10 +64,12 @@ $(document).ready(function() {
 				break;
 			case "5":
 				if ($('#fiveband3').css("display") == "none") {
-					$('#fiveband3').show('slow');
+					$('#fiveband3').css("display", "initial");
+//					$('#fiveband3').show('slow');
 				}
 				if ($('#band6').css("display") != "none") {
-					$('#band6').hide('slow');
+					$('#band6').css("display", "none");
+//					$('#band6').hide('slow');
 				}
 				
 				$('#result').text("Resistance: " + getResistanceStr(
@@ -80,10 +84,12 @@ $(document).ready(function() {
 				break;
 			case "6":
 				if ($('#fiveband3').css("display") == "none") {
-					$('#fiveband3').show('slow');
+					$('#fiveband3').css("display", "initial");
+//					$('#fiveband3').show('slow');
 				}
 				if ($('#band6').css("display") == "none") {
-					$('#band6').show('slow');
+					$('#band6').css("display", "initial");
+//					$('#band6').show('slow');
 				}
 				
 				$('#result').text("Resistance: " + getResistanceStr(
@@ -102,3 +108,4 @@ $(document).ready(function() {
 		}
 	});
 });
+j
