@@ -45,7 +45,7 @@ $(document).ready(function() {
 		switch (document.getElementById('numBands').value) {
 			case "4":
 				if ($('#fiveband3').css("display") != "none") {
-					$('#band6').css("display", "none");
+					$('#fiveband3').css("display", "none");
 //					$('#fiveband3').hide('slow');
 				}
 				if ($('#band6').css("display") != "none") {
