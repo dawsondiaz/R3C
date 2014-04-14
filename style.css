@@ -41,6 +41,9 @@ body {
    background-position: 90px;
    text-align: center;
    }
+.colorselect select {
+   text-align: center;
+   }
 .bandselect{
    background: transparent;
    padding-left: 2px;
