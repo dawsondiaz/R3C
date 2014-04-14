@@ -51,7 +51,8 @@ body {
    height: 40px;
    background-image: url('img/arrow.png');
    background-repeat: no-repeat;
-   background-position: 55px; 
+   background-position: 55px;
+   text-align: center;
    }
 .result {
 	font-size: 24px;
