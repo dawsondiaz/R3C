@@ -38,7 +38,8 @@ body {
    border-radius: 25px;
    background-image: url('img/arrow.png');
    background-repeat: no-repeat;
-   background-position: 90px; 
+   background-position: 90px;
+   text-align: center;
    }
 .bandselect{
    background: transparent;
@@ -52,7 +53,6 @@ body {
    background-image: url('img/arrow.png');
    background-repeat: no-repeat;
    background-position: 55px;
-   text-align: center;
    }
 .result {
 	font-size: 24px;
