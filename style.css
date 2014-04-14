@@ -30,15 +30,15 @@ body {
 .colorselect{
    background: transparent;
    padding: 0 0 0 2px;
-   width: 110px;
-   font-size: 24px;
+   width: 90px;
+   font-size: 18px;
    line-height: 1;
-   height: 40px;
+   height: 30px;
    -webkit-appearance: none;
    border-radius: 25px;
    background-image: url('img/arrow.png');
    background-repeat: no-repeat;
-   background-position: 90px;
+   background-position: 70px;
    text-align: center;
    }
 .bandselect{
@@ -49,11 +49,12 @@ body {
    line-height: 1;
    border: 0;
    border-radius: 0;
-   height: 40px;
+   height: 30px;
    background-image: url('img/arrow.png');
    background-repeat: no-repeat;
    background-position: 55px;
    }
 .result {
-	font-size: 24px;
+	font-size: 22px;
+	border: solid 1px;
 }
