@@ -58,4 +58,5 @@ body {
 .result {
 	font-size: 22px;
 	border: solid 1px;
+        text-indent: 1px;
 }
