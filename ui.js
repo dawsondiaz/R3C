@@ -14,7 +14,7 @@ $(document).ready(function() {
 							$(this).css('color', 'white');
 				break;
 			case "RED": 	$(this).css('background-color', 'red');
-							$(this).css('color', 'black');
+							$(this).css('color', 'white');
 				break;
 			case "ORANGE":	$(this).css('background-color', 'orange');
 							$(this).css('color', 'black');
