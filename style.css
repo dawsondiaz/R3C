@@ -40,6 +40,7 @@ body {
    background-repeat: no-repeat;
    background-position: 70px;
    text-align: center;
+   text-indent: 5px;
    }
 .bandselect{
    background: transparent;
