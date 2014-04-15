@@ -29,11 +29,10 @@ body {
 }
 .colorselect{
    background: transparent;
-   padding: 0 0 0 2px;
    width: 90px;
    font-size: 18px;
    line-height: 1;
-   height: 30px;
+   height: 32px;
    -webkit-appearance: none;
    border-radius: 25px;
    background-image: url('img/arrow.png');
@@ -58,4 +57,5 @@ body {
 .result {
 	font-size: 22px;
 	border: solid 1px;
+        text-indent: 1px;
 }
