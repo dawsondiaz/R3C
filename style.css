@@ -29,7 +29,7 @@ body {
 }
 .colorselect{
    background: transparent;
-   width: 90px;
+   width: 100px;
    font-size: 18px;
    line-height: 1;
    height: 32px;
@@ -37,7 +37,7 @@ body {
    border-radius: 25px;
    background-image: url('img/arrow.png');
    background-repeat: no-repeat;
-   background-position: 70px;
+   background-position: 80px;
    text-align: center;
    text-indent: 5px;
    }
