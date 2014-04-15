@@ -61,7 +61,7 @@ function tolerance(color) {
 		case colors["GREEN"]:	return 0.5;
 		case colors["BLUE"]:	return 0.25;
 		case colors["VIOLET"]:	return 0.1;
-		default: 		return 0;
+		default: 		return 20;
 	}
 }
 
