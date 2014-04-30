@@ -1,6 +1,6 @@
 R3C
 ===
-A web based resistor color code calculator
+A web based resistor color code calculator.
 
 Planned Additions
 -----------------
@@ -9,4 +9,4 @@ Planned Additions
 
 Known Issues
 ------------
-* None option doesn't return transparent background on user select
+* `None` option doesn't return transparent background on user select.
