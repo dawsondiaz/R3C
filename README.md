@@ -6,6 +6,7 @@ Planned Additions
 -----------------
 * Information page
 * (Ongoing) Don't forget to be awesome
+* Better mobile styling
 
 Known Issues
 ------------
