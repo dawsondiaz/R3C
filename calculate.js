@@ -26,7 +26,7 @@ function getResistanceStr(bands, numBands) {
 				Math.pow(10, colors[bands[2]])
 			;
 			
-			return resistance + " ohms " + tolerance(colors[bands[3]]) + "%";
+			return commafy(resistance) + " ohms " + tolerance(colors[bands[3]]) + "%";
 		case 5:
 			var resistance = 
 				(
@@ -37,7 +37,7 @@ function getResistanceStr(bands, numBands) {
 				Math.pow(10, colors[bands[3]])
 			;
 			
-			return resistance + " ohms " + tolerance(colors[bands[4]]) + "%";
+			return commafy(resistance) + " ohms " + tolerance(colors[bands[4]]) + "%";
 		case 6:
 			var resistance = 
 				(
