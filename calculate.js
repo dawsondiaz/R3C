@@ -48,7 +48,7 @@ function getResistanceStr(bands, numBands) {
 				Math.pow(10, colors[bands[3]])
 			;
 			
-			return resistance + " ohms " + tolerance(colors[bands[4]]) + "% " + temp(colors[bands[5]]) + "ppm";
+			return commafy(resistance) + " ohms " + tolerance(colors[bands[4]]) + "% " + temp(colors[bands[5]]) + "ppm";
 	}
 }
 
@@ -73,4 +73,17 @@ function temp(color) {
 		case colors["YELLOW"]:	return 25;
 		default:		return 0;
 	}
+}
+
+function commafy(num) {
+	var str = num.toString().split('.');
+	
+	if (str[0].length >= 5) {
+		str[0] = str[0].replace(/(\d)(?=(\d{3})+$)/g, '$1,');
+    }
+	if (str[1] && str[1].length >= 5) {
+		str[1] = str[1].replace(/(\d{3})/g, '$1 ');
+	}
+	
+	return str.join('.');
 }
