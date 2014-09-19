@@ -19,7 +19,6 @@ body {
 }
 #footer {
 	height: 35px;
-	font-family: noodle;
 	overflow-x: hidden;
 	overflow-y: hidden;
 }
@@ -44,7 +43,7 @@ body {
 .bandselect{
    background: transparent;
    padding-left: 2px;
-   width: 120px;
+   width: 130px;
    font-size: 20px;
    line-height: 1;
    border: 0;
